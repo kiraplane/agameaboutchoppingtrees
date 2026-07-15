@@ -1,0 +1,16 @@
+{
+  "name": "A Game About Chopping Trees Wiki",
+  "short_name": "Chopping Trees Wiki",
+  "description": "Practical A Game About Chopping Trees guides for upgrades, co-op, travel, achievements, controls and the Steam release.",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#f2b84b",
+  "background_color": "#07140f",
+  "display": "standalone"
+}

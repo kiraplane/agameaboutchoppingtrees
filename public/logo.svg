@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">A Game About Chopping Trees Wiki</title>
+  <desc id="desc">A golden axe beside two green pine trees.</desc>
+  <rect width="64" height="64" rx="13" fill="#07140f"/>
+  <circle cx="32" cy="32" r="27" fill="#10251a" stroke="#315b42" stroke-width="2"/>
+  <path d="M18 46h25" stroke="#f2b84b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M21 42V22" stroke="#8b5a2b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M21 14 11 29h20L21 14Z" fill="#63c174"/>
+  <path d="M35 42V27" stroke="#8b5a2b" stroke-width="4" stroke-linecap="round"/>
+  <path d="m35 20-8 13h16L35 20Z" fill="#3e9657"/>
+  <path d="m45 13 7 5-17 27-5-4 15-28Z" fill="#f2b84b"/>
+  <path d="m49 10 9 6-6 9-10-6 7-9Z" fill="#d9e6df" stroke="#f8f1dc" stroke-width="1"/>
+</svg>
