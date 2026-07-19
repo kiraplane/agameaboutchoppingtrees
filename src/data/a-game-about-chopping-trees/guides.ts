@@ -1,6 +1,6 @@
 import type { Guide, GuideVideo } from './types';
 
-const checkedAt = '2026-07-17';
+const checkedAt = '2026-07-19';
 
 const videos = {
   officialTrailer: {
@@ -58,6 +58,80 @@ const videos = {
 } satisfies Record<string, GuideVideo>;
 
 export const guides: Guide[] = [
+  {
+    slug: 'july-18-content-fixes-update',
+    path: '/guides/july-18-content-fixes-update',
+    title: 'A Game About Chopping Trees July 18 Update',
+    seoTitle: 'A Game About Chopping Trees July 18 Update Guide',
+    seoDescription:
+      'Review the July 18 A Game About Chopping Trees update: Dark Forest igloo, new achievements, Polaroids, sawmill speed upgrades and co-op fixes.',
+    summary:
+      'The first post-hotfix update adds a repairable Dark Forest igloo, two achievements, more Polaroids and a sawmill-speed branch while repairing several co-op and save problems.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/a-game-about-chopping-trees/screenshots/6.jpg',
+    publishedAt: '2026-07-19',
+    updatedAt: '2026-07-19',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official July 18 Steam announcement. The developer also confirmed a larger free update is in production, but did not publish its feature list or date.',
+    videoSearchQueries: [
+      'A Game About Chopping Trees July 18 update',
+      'A Game About Chopping Trees igloo beehive achievements',
+    ],
+    tags: ['Update', 'Dark Forest', 'Co-op'],
+    relatedRoutes: [
+      '/guides/hotfix-1-patch-notes',
+      '/guides/achievements-and-secrets',
+      '/guides/upgrades-and-progression',
+      '/guides/co-op-guide',
+    ],
+    body: [
+      {
+        heading: 'New Dark Forest objectives',
+        paragraphs: [
+          'The Dark Forest now contains an ice igloo that can be repaired. The update also adds achievements for repairing beehives and the igloo, plus more Polaroids around the map. Revisit older areas after updating because the developer specifically fixed beehive visibility in existing saves.',
+          'Treat the igloo as a repair objective, not a new biome. Follow the current interaction prompt and keep the old save until the repaired state and achievement register.',
+        ],
+      },
+      {
+        heading: 'Sawmill and progression changes',
+        paragraphs: [
+          'A new Quality of Life upgrade branch increases sawmill speed with each purchase. This changes the production bottleneck: after cutting and hauling become fast, compare the next sawmill-speed upgrade against another axe, grip, or endurance purchase.',
+          'Ice pines can now be sold, so old Dark Forest routes that ignored them should be retested. The patch also adds more Polaroids, which makes another exploration pass worthwhile before assuming a collectible is missing.',
+        ],
+      },
+      {
+        heading: 'Co-op and save fixes to retest',
+        paragraphs: [
+          'The trolley upgrade should now share correctly in co-op, client interactions should stop locking, and the Windows-to-Steam-Deck cloud-save issue is addressed. Large-tree replication, camera clipping, shovel audio, and interaction speed were also adjusted.',
+          'Update every co-op player before retesting. For cloud saves, confirm the expected file and progress on the original device before switching platforms.',
+        ],
+        bullets: [
+          'Recheck the trolley upgrade with both players on the same build.',
+          'Open an older save to verify beehive visibility.',
+          'Confirm cloud progress before replacing a local save.',
+          'Do not treat the promised major free update as released content yet.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What was added in the July 18 update?',
+        answer:
+          'It adds a repairable Dark Forest igloo, two achievements, more Polaroids and a Quality of Life sawmill-speed upgrade branch.',
+      },
+      {
+        question: 'Can ice pines be sold now?',
+        answer: 'Yes. The official July 18 notes say ice pines can now be sold.',
+      },
+      {
+        question: 'Is the major free update already available?',
+        answer:
+          'No. The developer says it is being prepared, but its content and release date are not yet announced.',
+      },
+    ],
+  },
   {
     slug: 'hotfix-1-patch-notes',
     path: '/guides/hotfix-1-patch-notes',
