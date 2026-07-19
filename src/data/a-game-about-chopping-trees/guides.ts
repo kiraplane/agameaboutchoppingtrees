@@ -1,6 +1,6 @@
 import type { Guide, GuideVideo } from './types';
 
-const checkedAt = '2026-07-16';
+const checkedAt = '2026-07-17';
 
 const videos = {
   officialTrailer: {
@@ -58,6 +58,81 @@ const videos = {
 } satisfies Record<string, GuideVideo>;
 
 export const guides: Guide[] = [
+  {
+    slug: 'hotfix-1-patch-notes',
+    path: '/guides/hotfix-1-patch-notes',
+    title: 'A Game About Chopping Trees Hot Fix #1',
+    seoTitle: 'A Game About Chopping Trees Hot Fix #1 Patch Notes',
+    seoDescription:
+      'See what Hot Fix #1 changed in A Game About Chopping Trees, including coffee, the Oak beehive, progression fixes, stamina, planting and sawmill saves.',
+    summary:
+      'The first release hotfix fixes progression, chainsaw, planting and sawmill-save problems, while changing stamina regeneration, planting costs and the final quest.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/a-game-about-chopping-trees/screenshots/6.jpg',
+    publishedAt: '2026-07-17',
+    updatedAt: '2026-07-17',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official July 16 Steam Hot Fix #1 announcement. The current in-game build remains the authority for exact balance.',
+    videoSearchQueries: [
+      'A Game About Chopping Trees Hot Fix 1',
+      'A Game About Chopping Trees patch notes',
+    ],
+    tags: ['Hotfix', 'Patch notes', 'Progression'],
+    relatedRoutes: [
+      '/guides/beginner-guide',
+      '/guides/upgrades-and-progression',
+      '/guides/handcar-biomes-and-bridges',
+      '/guides/achievements-and-secrets',
+    ],
+    body: [
+      {
+        heading: 'What Hot Fix #1 adds',
+        paragraphs: [
+          'The first post-launch hotfix adds two small but useful interactions: coffee can now be consumed even when stamina is full, and a beehive has been added to the Oak forest. Coffee is therefore no longer blocked by a full bar when the player wants to trigger the interaction or work toward the related achievement.',
+          'The Oak beehive is a world addition rather than a new progression branch. Check the live Oak route after updating instead of relying on demo-era placement footage.',
+        ],
+      },
+      {
+        heading: 'Progression and save fixes',
+        paragraphs: [
+          'The patch fixes incorrect progression counting on some clients, a missing final chainsaw-damage upgrade, repeated planting on the same location, a planting-cost exploit, and sawmill money that could fail to arrive after loading a save. If one of these problems blocked a run, fully update and restart the game before retesting the affected save.',
+          'The developers also fixed localization typos and adjusted several props. These changes should not require a new save. Keep the original save until the updated build has loaded and the expected money or progression state is visible.',
+        ],
+        bullets: [
+          'Progression counters should now advance correctly on affected clients.',
+          'The final chainsaw damage upgrade should no longer disappear.',
+          'One planting location can no longer accept multiple overlapping trees.',
+          'Loaded saves should correctly receive pending sawmill money.',
+        ],
+      },
+      {
+        heading: 'Balance changes that affect normal routes',
+        paragraphs: [
+          'Stamina regeneration is slower, while planting costs are higher to stop an overly profitable plant-and-cut loop in one spot. Players who used constant local replanting should return to a normal forest rotation and budget coffee around a planned work batch.',
+          'The final quest no longer requires an ice log. That removes one old completion blocker, so follow the current quest text rather than an earlier walkthrough. The developers also say a larger content update is in development, but no feature list or release date is confirmed yet.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What is the latest A Game About Chopping Trees patch?',
+        answer:
+          'Hot Fix #1 was published on July 16, 2026 and is the latest official patch covered by this page.',
+      },
+      {
+        question: 'Did the hotfix repair missing sawmill money?',
+        answer:
+          'Yes. The official notes fix missing sawmill payouts after loading a game.',
+      },
+      {
+        question: 'Does the last quest still require an ice log?',
+        answer:
+          'No. Hot Fix #1 removes the ice-log requirement from the final quest.',
+      },
+    ],
+  },
   {
     slug: 'beginner-guide',
     path: '/guides/beginner-guide',

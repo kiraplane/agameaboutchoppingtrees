@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-07-16';
+export const checkedAt = '2026-07-17';
 
 export const siteFacts = {
   siteName: 'A Game About Chopping Trees Wiki',
@@ -82,6 +82,14 @@ export const achievements = [
 ] as const;
 
 export const sources: DataSource[] = [
+  {
+    type: 'official',
+    label: 'Official Hot Fix #1 announcement',
+    url: 'https://steamcommunity.com/games/4512570/announcements/detail/1838407329257330',
+    checkedAt,
+    confidence: 'high',
+    note: 'Primary source for the July 16 progression, planting, stamina, quest, coffee, beehive and sawmill-save changes.',
+  },
   {
     type: 'official',
     label: 'A Game About Chopping Trees Steam store',
