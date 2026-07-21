@@ -1,6 +1,6 @@
 import type { Guide, GuideVideo } from './types';
 
-const checkedAt = '2026-07-20';
+const checkedAt = '2026-07-21';
 
 const videos = {
   officialTrailer: {
