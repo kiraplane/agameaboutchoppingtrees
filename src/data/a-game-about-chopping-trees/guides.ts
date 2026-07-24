@@ -1,6 +1,6 @@
 import type { Guide, GuideVideo } from './types';
 
-const checkedAt = '2026-07-21';
+const checkedAt = '2026-07-24';
 
 const videos = {
   officialTrailer: {
@@ -123,7 +123,8 @@ export const guides: Guide[] = [
       },
       {
         question: 'Can ice pines be sold now?',
-        answer: 'Yes. The official July 18 notes say ice pines can now be sold.',
+        answer:
+          'Yes. The official July 18 notes say ice pines can now be sold.',
       },
       {
         question: 'Is the major free update already available?',
@@ -1120,6 +1121,77 @@ export const guides: Guide[] = [
         question: 'Is the demo the full game?',
         answer:
           'No. The demo is a separate App 4738320, while the released base game is App 4512570.',
+      },
+    ],
+  },
+  {
+    slug: 'hotfix-3-4-save-crash-fixes',
+    path: '/guides/hotfix-3-4-save-crash-fixes',
+    title: 'Hot Fixes 3 and 4: Save, Crash and Tree Fixes',
+    seoTitle: 'A Game About Chopping Trees Hot Fixes 3 & 4',
+    seoDescription:
+      'Review Hot Fixes 3 and 4 for CPU crashes, tree detection, save speed, camera FOV, raccoon achievements, New Game Plus and co-op.',
+    summary:
+      'The July 21–22 hotfix pair repairs current-generation CPU crashes and several progression states that can make tree counts, saves, achievements or New Game Plus look wrong.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/a-game-about-chopping-trees/hero.jpg',
+    publishedAt: '2026-07-24',
+    updatedAt: '2026-07-24',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from official Steam Hot Fix #3 and Hot Fix #4. New games may be required for the New Game Plus quest-retrigger correction.',
+    videoSearchQueries: [
+      'A Game About Chopping Trees Hot Fix 4',
+      'A Game About Chopping Trees CPU crash',
+      'A Game About Chopping Trees raccoon achievement',
+    ],
+    tags: ['Hot Fix 4', 'Save', 'Co-op'],
+    relatedRoutes: [
+      '/guides/achievements-and-secrets',
+      '/guides/co-op-guide',
+      '/guides/upgrades-and-progression',
+      '/guides/controls-gamepad-and-sprint',
+    ],
+    body: [
+      {
+        heading: 'Hot Fix 4 targets launch crashes and tree detection',
+        paragraphs: [
+          'Hot Fix #4 attempts to resolve a client crash seen on newer-generation CPUs and improves tree detection inside zone volumes. Update before changing compatibility settings or assuming the zone objective is permanently blocked.',
+          'Retest the same tree area after the patch. If the count still fails, note the zone, tree type, whether the tree fully fell and whether the save began before the update.',
+        ],
+      },
+      {
+        heading: 'Hot Fix 3 repairs several saved states',
+        paragraphs: [
+          'The previous patch fixes the saved speed attribute, camera field of view after using the polaroid, missing soundtrack DLC tracks and a raccoon achievement that could fail on some clients. It also corrects falling-tree counts used by zone volumes.',
+          'Restart the game after updating and retest the existing profile before replaying an achievement. For the raccoon goal, confirm all statues remain collected and let Steam synchronize before forcing a new save.',
+        ],
+      },
+      {
+        heading: 'New Game Plus has one important limitation',
+        paragraphs: [
+          'The quest-retrigger correction for completed zones is documented as working only for new games created after the fix. An older New Game Plus profile may therefore retain the previous bad state.',
+          'Keep the old save as a backup, then create a fresh post-patch game when the blocked quest matters more than preserving that run. Do not overwrite the only working profile while testing.',
+        ],
+      },
+      {
+        heading: 'Co-op phantom players should be gone',
+        paragraphs: [
+          'Hot Fix 3 includes a correction for phantom players in co-op. Both players should update and restart before loading the shared route.',
+          'If a ghost slot remains, have the host close the session cleanly, verify the current build on both clients and retry once without changing the world save.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Which patch targets newer CPU crashes?',
+        answer: 'Official Hot Fix #4 lists that attempted fix.',
+      },
+      {
+        question: 'Will the New Game Plus quest fix repair every old save?',
+        answer:
+          'No. The developer says the retrigger correction works for newly created games.',
       },
     ],
   },
