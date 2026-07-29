@@ -1,6 +1,6 @@
 import type { Guide, GuideVideo } from './types';
 
-const checkedAt = '2026-07-24';
+const checkedAt = '2026-07-29';
 
 const videos = {
   officialTrailer: {
@@ -58,6 +58,80 @@ const videos = {
 } satisfies Record<string, GuideVideo>;
 
 export const guides: Guide[] = [
+  {
+    slug: 'hotfix-5-linux-coop-progress',
+    path: '/guides/hotfix-5-linux-coop-progress',
+    title: 'A Game About Chopping Trees Hot Fix #5',
+    seoTitle: 'A Game About Chopping Trees Hot Fix #5 Guide',
+    seoDescription:
+      'Review Hot Fix #5 for Linux leaves, Stump Killer co-op progress, husky behavior and missing player progress when a co-op player leaves.',
+    summary:
+      'Hot Fix #5 targets Linux leaf rendering and three co-op trouble spots: Stump Killer logic, husky behavior and progress lost when someone leaves before a save.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/a-game-about-chopping-trees/screenshots/6.jpg',
+    publishedAt: '2026-07-27',
+    updatedAt: '2026-07-28',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official July 27 Steam Hot Fix #5 announcement. The notes describe fixes, not a new content branch.',
+    videoSearchQueries: [
+      'A Game About Chopping Trees Hot Fix 5',
+      'A Game About Chopping Trees co-op progress fix',
+    ],
+    tags: ['Hotfix', 'Co-op', 'Linux'],
+    relatedRoutes: [
+      '/guides/co-op-guide',
+      '/guides/achievements-and-secrets',
+      '/guides/hotfix-3-4-save-crash-fixes',
+      '/guides/upgrades-and-progression',
+    ],
+    body: [
+      {
+        heading: 'Update every co-op player before retesting',
+        paragraphs: [
+          'Hot Fix #5 fixes missing co-op progress when a player leaves before the group saves. Have every participant update first, then load the host save, complete one short objective and save before anyone disconnects. This creates a clean test without risking a long session.',
+          'The fix does not mean every old unsaved action can be reconstructed. Keep the original save and verify cash, upgrades, achievements and objective progress before replacing backups.',
+        ],
+      },
+      {
+        heading: 'Stump Killer and husky fixes',
+        paragraphs: [
+          'The Stump Killer achievement logic has been corrected for co-op. Recheck it with the same host and client roles on the current build instead of repeating an older workaround.',
+          'The patch also fixes unspecified husky behavior bugs. Because the official note does not list every affected animation or interaction, confirm the exact live behavior before assuming a separate husky problem is solved.',
+        ],
+        bullets: [
+          'Use the same save and player roles when retesting Stump Killer.',
+          'Save once before a client leaves the session.',
+          'Record any remaining husky issue with host/client role and location.',
+        ],
+      },
+      {
+        heading: 'Linux leaf rendering',
+        paragraphs: [
+          'The developer made another attempt to correct incorrect leaf rendering on Linux. Restart the game after updating and compare the same forest before changing graphics settings.',
+          'If leaves are still wrong, note the Linux distribution, GPU and driver. The wording “try fix” means the developer is addressing the issue, but it is not a guarantee for every Linux configuration.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What does Hot Fix #5 change?',
+        answer:
+          'It targets Linux leaf rendering, Stump Killer co-op logic, husky behavior and progress missing when a co-op player leaves before saving.',
+      },
+      {
+        question: 'Can a player safely leave before the host saves now?',
+        answer:
+          'The related progress-loss bug is listed as fixed, but saving before anyone disconnects remains the safest workflow.',
+      },
+      {
+        question: 'Does Hot Fix #5 add new content?',
+        answer:
+          'No new content is listed. It is a rendering, localization, achievement, behavior and co-op progress hotfix.',
+      },
+    ],
+  },
   {
     slug: 'july-18-content-fixes-update',
     path: '/guides/july-18-content-fixes-update',
