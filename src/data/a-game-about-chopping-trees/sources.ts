@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-08-10';
+export const checkedAt = '2026-08-11';
 
 export const siteFacts = {
   siteName: 'A Game About Chopping Trees Wiki',
@@ -82,6 +82,30 @@ export const achievements = [
 ] as const;
 
 export const sources: DataSource[] = [
+  {
+    type: 'official',
+    label: 'Official Hot Fix #7 announcement',
+    url: 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314352280',
+    checkedAt,
+    confidence: 'high',
+    note: 'Primary source for the Ent 1 HP, dropped-radio music, end-statistics and dog-house fixes.',
+  },
+  {
+    type: 'official',
+    label: 'Official Hot Fix #6 announcement',
+    url: 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314347821',
+    checkedAt,
+    confidence: 'high',
+    note: 'Primary source for Husky summoning, boss health, post-boss autosave, planting-tool and key-rebind fixes.',
+  },
+  {
+    type: 'official',
+    label: 'Official August 7 content update',
+    url: 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314345981',
+    checkedAt,
+    confidence: 'high',
+    note: 'Primary source for multiple saves, secret location, axe skins, Husky commands and the New Game Plus result flow.',
+  },
   {
     type: 'official',
     label: 'Official Hot Fix #1 announcement',

@@ -1,6 +1,6 @@
 import type { Guide, GuideVideo } from './types';
 
-const checkedAt = '2026-08-10';
+const checkedAt = '2026-08-11';
 
 const videos = {
   officialTrailer: {
@@ -58,6 +58,213 @@ const videos = {
 } satisfies Record<string, GuideVideo>;
 
 export const guides: Guide[] = [
+  {
+    slug: 'hotfix-7-ent-radio-stats-dog-house',
+    path: '/guides/hotfix-7-ent-radio-stats-dog-house',
+    title: 'A Game About Chopping Trees Hot Fix #7',
+    seoTitle: 'A Game About Chopping Trees Hot Fix #7 Guide',
+    seoDescription:
+      'See what Hot Fix #7 changes for the Ent boss, dropped radio music, end-of-game statistics and the dog house interaction.',
+    summary:
+      'Hot Fix #7 repairs four focused problems: the Ent surviving at 1 HP, dropped radios blocking level music, incorrect end statistics and a broken dog house interaction.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/a-game-about-chopping-trees/screenshots/6.jpg',
+    publishedAt: '2026-08-10',
+    updatedAt: '2026-08-11',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official August 10 Steam Hot Fix #7 announcement.',
+    videoSearchQueries: [
+      'A Game About Chopping Trees Hot Fix 7',
+      'A Game About Chopping Trees Ent 1 HP fix',
+    ],
+    tags: ['Hotfix', 'Ent', 'Statistics'],
+    relatedRoutes: [
+      '/guides/achievements-and-secrets',
+      '/guides/hotfix-6-boss-save-husky-fixes',
+      '/guides/august-7-secret-area-axe-skins-update',
+      '/guides/upgrades-and-progression',
+    ],
+    body: [
+      {
+        heading: 'Retest the Ent fight on the current build',
+        paragraphs: [
+          'The Ent should no longer remain alive at 1 HP. Update the game before retrying the encounter, then finish the fight normally instead of repeating an older workaround.',
+          'If the boss still stalls, record the save mode, co-op role and last attack used. Hot Fix #7 names the 1 HP state specifically; it does not claim that every possible boss issue is fixed.',
+        ],
+      },
+      {
+        heading: 'Radio and dog house interactions',
+        paragraphs: [
+          'A dropped radio should no longer block the level music. Test this by placing and dropping one radio, then moving far enough away for the normal soundtrack state to resume.',
+          'The dog house interaction is also repaired. Approach it after loading the updated save and check the live prompt before assuming a previous broken state requires a new game.',
+        ],
+      },
+      {
+        heading: 'End-of-game statistics',
+        paragraphs: [
+          'The patch corrects a calculation error on the final statistics screen. Complete one short session after updating and compare the summary against the actions performed in that session.',
+          'Historical summaries produced by an older build may remain wrong; the fix is most useful for new result screens generated after the update.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What does Hot Fix #7 fix?',
+        answer:
+          'It fixes the Ent 1 HP bug, dropped radios blocking level music, incorrect end statistics and the dog house interaction.',
+      },
+      {
+        question: 'Do I need a new save?',
+        answer:
+          'The official note does not require one. Update first and retest the affected interaction on a backed-up current save.',
+      },
+      {
+        question: 'Does Hot Fix #7 add new content?',
+        answer: 'No. It is a four-item bug-fix patch.',
+      },
+    ],
+  },
+  {
+    slug: 'hotfix-6-boss-save-husky-fixes',
+    path: '/guides/hotfix-6-boss-save-husky-fixes',
+    title: 'A Game About Chopping Trees Hot Fix #6',
+    seoTitle: 'A Game About Chopping Trees Hot Fix #6 Guide',
+    seoDescription:
+      'Review Hot Fix #6 fixes for Husky summoning, boss health, post-boss autosaves, planting-tool selection and key-rebind crashes.',
+    summary:
+      'Hot Fix #6 lets players summon the Husky from its house and repairs boss, autosave, planting-tool and key-rebind problems.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/a-game-about-chopping-trees/screenshots/6.jpg',
+    publishedAt: '2026-08-08',
+    updatedAt: '2026-08-11',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official August 8 Steam Hot Fix #6 announcement.',
+    videoSearchQueries: [
+      'A Game About Chopping Trees Hot Fix 6',
+      'A Game About Chopping Trees Husky summon boss save fix',
+    ],
+    tags: ['Hotfix', 'Husky', 'Boss'],
+    relatedRoutes: [
+      '/guides/hotfix-7-ent-radio-stats-dog-house',
+      '/guides/august-7-secret-area-axe-skins-update',
+      '/guides/achievements-and-secrets',
+      '/guides/co-op-guide',
+    ],
+    body: [
+      {
+        heading: 'Summon the Husky from its house',
+        paragraphs: [
+          'The Husky can now be summoned directly from its house. Use that interaction before assuming the companion is lost somewhere on the map.',
+          'If the prompt is missing, restart after the update and confirm the Husky has already been unlocked on that save.',
+        ],
+      },
+      {
+        heading: 'Boss health and autosave repair',
+        paragraphs: [
+          'The patch repairs several boss-fight elements and boss health, then fixes autosaving after the fight. Back up the save, update, defeat one boss and verify that the next load begins after the expected checkpoint.',
+          'The developer warns that already broken saves are not repaired by this hotfix. Keep a backup and do not overwrite the only copy while testing.',
+        ],
+      },
+      {
+        heading: 'Planting tool and key rebinding',
+        paragraphs: [
+          'The planting-tool selection wheel should work again, and rebinding controls should no longer trigger the listed client crash. Test one binding at a time so a remaining device-specific problem is easy to identify.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Can Hot Fix #6 repair an already broken boss save?',
+        answer:
+          'The developer says the autosave fixes do not repair saves that were already broken, so preserve backups before testing.',
+      },
+      {
+        question: 'How do I call the Husky after Hot Fix #6?',
+        answer: 'Use the new summon interaction at the Husky house.',
+      },
+      {
+        question: 'What crash was fixed?',
+        answer:
+          'The official note fixes a client crash that could happen while rebinding keys.',
+      },
+    ],
+  },
+  {
+    slug: 'august-7-secret-area-axe-skins-update',
+    path: '/guides/august-7-secret-area-axe-skins-update',
+    title: 'A Game About Chopping Trees August 7 Update',
+    seoTitle: 'A Game About Chopping Trees Secret Area & Axe Skins',
+    seoDescription:
+      'Explore the August 7 update with multiple saves, a secret location, axe skins, Husky commands, minimap marker and New Game Plus choices.',
+    summary:
+      'The August 7 content update adds multiple save slots, a secret location, axe skins, a Husky command wheel and marker, plus a clearer New Game Plus result flow.',
+    category: 'Exploration',
+    difficulty: 'Intermediate',
+    coverImageUrl: '/a-game-about-chopping-trees/screenshots/6.jpg',
+    publishedAt: '2026-08-07',
+    updatedAt: '2026-08-11',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Built from the official August 7 Steam content-update announcement. The secret location is intentionally not spoiled beyond its official existence.',
+    videoSearchQueries: [
+      'A Game About Chopping Trees August 7 update secret area',
+      'A Game About Chopping Trees axe skins Husky commands',
+    ],
+    tags: ['Secret area', 'Axe skins', 'Husky'],
+    relatedRoutes: [
+      '/guides/achievements-and-secrets',
+      '/guides/upgrades-and-progression',
+      '/guides/hotfix-6-boss-save-husky-fixes',
+      '/guides/handcar-biomes-and-bridges',
+    ],
+    body: [
+      {
+        heading: 'Use the new save slots before exploring',
+        paragraphs: [
+          'The game now supports multiple saves that can be loaded or deleted. Keep the main progression save intact and create a separate slot before testing New Game Plus, secret-area routes or unusual interactions.',
+          'The final result screen now offers a clearer choice between staying and continuing into New Game Plus. Read that prompt before accepting so the forest state matches the route you want.',
+        ],
+      },
+      {
+        heading: 'Secret location and axe skins',
+        paragraphs: [
+          'A new secret location is live, but the official note does not publish its route. Revisit places where late-game traversal, the Husky or a changed interaction can reveal an alternate path instead of following demo-era maps blindly.',
+          'Axe skins can be changed at the workbench. They are a customization layer; do not spend upgrade money expecting a skin to improve damage unless the live interface explicitly says so.',
+        ],
+      },
+      {
+        heading: 'Use the Husky command wheel and minimap marker',
+        paragraphs: [
+          'Focus on the Husky and press the right mouse button to open its command wheel. The companion now has a minimap marker and can ride in the handcar, which makes longer exploration loops easier to manage.',
+        ],
+        bullets: [
+          'Check the Husky marker before backtracking.',
+          'Use the handcar for long transitions with the companion.',
+          'Select tree types from the planting tool without an extra left click.',
+          'Back up saves before deleting any slot.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Where do I change axe skins?',
+        answer: 'Use the workbench after installing the August 7 update.',
+      },
+      {
+        question: 'How do I open the Husky command wheel?',
+        answer: 'Focus on the Husky and press the right mouse button.',
+      },
+      {
+        question: 'Does the update reveal the secret-area location?',
+        answer:
+          'No. The official announcement confirms a secret location but does not publish its exact route.',
+      },
+    ],
+  },
   {
     slug: 'hotfix-5-linux-coop-progress',
     path: '/guides/hotfix-5-linux-coop-progress',
