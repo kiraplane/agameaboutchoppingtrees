@@ -1,6 +1,6 @@
 import type { Guide, GuideVideo } from './types';
 
-const checkedAt = '2026-08-13';
+const checkedAt = '2026-08-15';
 
 const videos = {
   officialTrailer: {
@@ -58,6 +58,81 @@ const videos = {
 } satisfies Record<string, GuideVideo>;
 
 export const guides: Guide[] = [
+  {
+    slug: 'hotfix-8-9-old-save-progression-fixes',
+    path: '/guides/hotfix-8-9-old-save-progression-fixes',
+    title: 'A Game About Chopping Trees Hot Fixes #8 and #9',
+    seoTitle: 'Chopping Trees Hot Fixes 8 & 9 - Save Progress Fixes',
+    seoDescription:
+      'Review Hot Fixes #8 and #9 for missing New Game Plus resets, dog house state on old saves, and a critical progression-blocking bug.',
+    summary:
+      'Hot Fix #8 repairs New Game Plus reset and dog house state for older saves, while Hot Fix #9 targets a critical bug that could block progression.',
+    category: 'Status',
+    difficulty: 'Status',
+    coverImageUrl: '/a-game-about-chopping-trees/screenshots/6.jpg',
+    publishedAt: '2026-08-15',
+    updatedAt: '2026-08-15',
+    sourceStrategy: 'official',
+    sourceNotes:
+      'Summarized from the official August 11 Hot Fix #8 and August 13 Hot Fix #9 Steam announcements. The developer did not publish a longer list of conditions for the Hot Fix #9 blocker.',
+    videoSearchQueries: [
+      'A Game About Chopping Trees Hot Fix 9',
+      'A Game About Chopping Trees old save New Game Plus',
+    ],
+    tags: ['Hotfix', 'Progression', 'Old Saves'],
+    relatedRoutes: [
+      '/guides/hotfix-7-ent-radio-stats-dog-house',
+      '/guides/august-7-secret-area-axe-skins-update',
+      '/guides/upgrades-and-progression',
+      '/guides/co-op-guide',
+    ],
+    body: [
+      {
+        heading: 'Install both hotfixes before abandoning a save',
+        paragraphs: [
+          'Hot Fix #8 restores a missing New Game Plus reset for older saves and fixes the dog house state on those saves. Hot Fix #9 then repairs a critical bug that could block progression under certain conditions. Let Steam finish updating, restart the game, and keep a backup of the affected save before testing.',
+          'The official Hot Fix #9 note does not identify every trigger. Retest the exact objective or transition that previously failed instead of assuming a different quest, boss, or interaction is covered. Record the objective name, biome, save age, co-op role, and last action if the blocker remains.',
+        ],
+        bullets: [
+          'Back up the affected profile before loading it on the new build.',
+          'Confirm the New Game Plus reset appears when the run is eligible.',
+          'Visit the dog house and test its normal interaction on an older save.',
+          'Retry the blocked progression step once before starting a fresh run.',
+        ],
+      },
+      {
+        heading: 'How to test an old New Game Plus save',
+        paragraphs: [
+          'Load the save, inspect the end-of-run or New Game Plus state, and verify that the reset choice is available where expected. Continue only far enough to confirm the next objective initializes correctly. Do not overwrite the only backup while checking whether the reset has returned.',
+          'If the reset is still missing, compare the result with a fresh post-patch profile before deleting anything. This separates an old saved-state problem from a broader build problem and gives the developer a cleaner report.',
+        ],
+      },
+      {
+        heading: 'Dog house and progression are separate checks',
+        paragraphs: [
+          'Hot Fix #8 names the dog house and New Game Plus reset separately. A repaired dog house interaction does not prove that the progression state is fixed, and a restored reset does not prove every Husky behavior is covered. Test both independently.',
+          'Hot Fix #7 already repaired a broken dog house interaction in the current flow; Hot Fix #8 specifically extends the repair to older saves. Use the newer page for old-save recovery and the Hot Fix #7 page for the broader Ent, radio, statistics, and dog house fixes.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What does Hot Fix #8 fix?',
+        answer:
+          'It restores the New Game Plus reset and fixes the dog house state for older saves.',
+      },
+      {
+        question: 'What does Hot Fix #9 fix?',
+        answer:
+          'It fixes a critical bug that could block progression under certain conditions. The official note does not list every trigger.',
+      },
+      {
+        question: 'Should I delete a blocked save?',
+        answer:
+          'No. Back it up, update, restart, and retest the exact blocked step before considering a fresh profile.',
+      },
+    ],
+  },
   {
     slug: 'hotfix-7-ent-radio-stats-dog-house',
     path: '/guides/hotfix-7-ent-radio-stats-dog-house',

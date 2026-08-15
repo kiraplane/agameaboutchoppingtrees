@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-08-13';
+export const checkedAt = '2026-08-15';
 
 export const siteFacts = {
   siteName: 'A Game About Chopping Trees Wiki',
@@ -82,6 +82,22 @@ export const achievements = [
 ] as const;
 
 export const sources: DataSource[] = [
+  {
+    type: 'official',
+    label: 'Official Hot Fix #9 announcement',
+    url: 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183777346',
+    checkedAt,
+    confidence: 'high',
+    note: 'Primary source for the August 13 progression-blocking bug fix.',
+  },
+  {
+    type: 'official',
+    label: 'Official Hot Fix #8 announcement',
+    url: 'https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314354594',
+    checkedAt,
+    confidence: 'high',
+    note: 'Primary source for restoring the New Game Plus reset and dog house state on older saves.',
+  },
   {
     type: 'official',
     label: 'Official Hot Fix #7 announcement',
