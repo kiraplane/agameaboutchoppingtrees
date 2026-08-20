@@ -1,6 +1,6 @@
 import type { Guide, GuideVideo } from './types';
 
-const checkedAt = '2026-08-17';
+const checkedAt = '2026-08-20';
 
 const videos = {
   officialTrailer: {
@@ -53,6 +53,17 @@ const videos = {
     thumbnailUrl: '/a-game-about-chopping-trees/guides/achievements.jpg',
     publishedAt: '2026-06-08',
     viewCountLabel: 'Exact secret-achievement cross-check',
+    checkedAt,
+  },
+  raccoonLocations: {
+    id: 'w5PbFuAqkUU',
+    title:
+      'ALL 10 Raccoon Statue Locations - A Game About Chopping Trees (Raccoon Collector)',
+    channel: 'GameSmyth',
+    url: 'https://www.youtube.com/watch?v=w5PbFuAqkUU',
+    thumbnailUrl: '/a-game-about-chopping-trees/guides/achievements.jpg',
+    publishedAt: '2026-07-22',
+    viewCountLabel: '2,198 views at August 20 check',
     checkedAt,
   },
 } satisfies Record<string, GuideVideo>;
@@ -589,6 +600,7 @@ export const guides: Guide[] = [
     video: videos.launchGameplay,
     tags: ['First hour', 'Walkthrough', 'Stamina'],
     relatedRoutes: [
+      '/guides/raccoon-statue-locations',
       '/guides/upgrades-and-progression',
       '/guides/handcar-biomes-and-bridges',
       '/guides/co-op-guide',
@@ -906,6 +918,124 @@ export const guides: Guide[] = [
     ],
   },
   {
+    slug: 'raccoon-statue-locations',
+    path: '/guides/raccoon-statue-locations',
+    title: 'All 10 Raccoon Statue Locations',
+    seoTitle: 'A Game About Chopping Trees Raccoon Locations - All 10',
+    seoDescription:
+      'Find all 10 raccoon statues across Oak Forest, Birch Grove, Dark Forest, the communications tower, cannon and lighthouse exterior.',
+    summary:
+      'Use a zone-by-zone checklist for every raccoon statue and finish the Raccoon Collecter achievement without repeatedly searching cleared areas.',
+    category: 'Exploration',
+    difficulty: 'Reference',
+    coverImageUrl: videos.raccoonLocations.thumbnailUrl,
+    publishedAt: '2026-08-20',
+    updatedAt: '2026-08-20',
+    sourceStrategy: 'official_and_youtube',
+    sourceNotes:
+      'The achievement name comes from the current Steam schema. The ten landmarks are cross-checked against a complete July 22 location run.',
+    videoSearchQueries: [
+      'A Game About Chopping Trees raccoon locations',
+      'A Game About Chopping Trees all 10 raccoons',
+      'A Game About Chopping Trees Raccoon Collecter achievement',
+    ],
+    video: videos.raccoonLocations,
+    tags: ['10 Raccoons', 'Locations', 'Achievement'],
+    relatedRoutes: [
+      '/guides/achievements-and-secrets',
+      '/guides/handcar-biomes-and-bridges',
+      '/guides/upgrades-and-progression',
+      '/guides/beginner-guide',
+    ],
+    body: [
+      {
+        heading: 'Prepare the map before collectible cleanup',
+        paragraphs: [
+          'There are 10 raccoon statues spread across Oak Forest, Birch Grove, Dark Forest, and the lighthouse route. You can collect them in any order. The cleanest approach is to finish the bridge and handcar progression first, then sweep one zone at a time instead of copying a route that assumes every shortcut is already open.',
+          'Keep a ten-line checklist beside the game. Mark the landmark immediately after interacting with each statue, even if the achievement counter is not visible. Several locations sit beside normal progression objects, so it is easy to remember seeing a statue without remembering whether it was actually collected.',
+        ],
+        bullets: [
+          'Oak Forest: half-sunken dock, Oak Forest cart, stump near the coffee machine, communications tower.',
+          'Birch Grove: broken waterwheel, cannon.',
+          'Dark Forest: upgrade-bench stool, snowman, handcart barrier.',
+          'Final landmark: lighthouse exterior.',
+        ],
+      },
+      {
+        heading: 'Oak Forest locations 1 to 4',
+        paragraphs: [
+          'Start at the half-sunken dock in Oak Forest. Search the dock structure and the water-facing edge rather than only the path leading to it. Next, move to the Oak Forest cart and inspect the cart itself from both sides. These first two are easy to miss when the player is focused on hauling or following the rail route.',
+          'The third Oak statue is on a tree stump near the coffee machine. Use the machine as the primary landmark, then scan the nearby stumps instead of searching every cut tree in the zone. The fourth Oak Forest statue is at the communications tower. Walk around the tower base and check the side that is less visible from the main approach.',
+        ],
+        bullets: [
+          '1. Half-sunken dock in Oak Forest.',
+          '2. Oak Forest cart.',
+          '3. Tree stump near the coffee machine.',
+          '4. Communications tower in Oak Forest.',
+        ],
+      },
+      {
+        heading: 'Birch Grove locations 5 and 6',
+        paragraphs: [
+          'Birch Grove has two statues in this checklist. One is beside the broken waterwheel. Approach the full wheel structure and inspect its broken side and the ground immediately around it; a quick pass along the main route can leave the collectible outside the camera.',
+          'The second Birch statue is at the cannon. Use the cannon as the exact destination rather than treating the whole coast as one search area. Circle the prop once, collect the statue, and mark Birch complete before moving to Dark Forest. That simple zone boundary prevents an unnecessary return trip later.',
+        ],
+        bullets: [
+          '5. Broken waterwheel in Birch Grove.',
+          '6. Cannon in Birch Grove.',
+        ],
+      },
+      {
+        heading: 'Dark Forest locations 7 to 9',
+        paragraphs: [
+          'Dark Forest contains three raccoons. The first sits around the upgrade-bench stool. Do not stop after looking at the bench surface; move close to the stool and check the floor-level angle. The second is at the snowman, a strong landmark that makes this a useful place to verify the Dark Forest count.',
+          'The third is at the handcart barrier. Follow the handcart route until the barrier is clearly visible, then inspect the barrier rather than continuing down the track. If one Dark Forest statue is missing, revisit these three named props in order. Randomly sweeping the entire dark area is slower and makes duplicate checks more likely.',
+        ],
+        bullets: [
+          '7. Upgrade-bench stool in Dark Forest.',
+          '8. Snowman in Dark Forest.',
+          '9. Handcart barrier in Dark Forest.',
+        ],
+      },
+      {
+        heading: 'Finish at the lighthouse exterior',
+        paragraphs: [
+          'The tenth statue is outside the lighthouse. You do not need to search every interior level for this collectible. Walk the exterior perimeter, keeping the lighthouse wall in view, and inspect the side that is hidden from the normal arrival angle.',
+          'After collecting it, wait for the Raccoon Collecter achievement to appear before leaving the session. If it does not unlock, compare your checklist against all ten named landmarks, then revisit the least memorable interaction. The order does not matter, so a missing achievement almost always calls for a targeted landmark recheck rather than a new save.',
+        ],
+      },
+      {
+        heading: 'Use a missing-statue recovery order',
+        paragraphs: [
+          'When the achievement is stuck at the end, check compact landmarks before long travel routes: the coffee-machine stump, upgrade-bench stool, cart, cannon, and snowman. Then check the half-sunken dock, broken waterwheel, communications tower, handcart barrier, and lighthouse exterior. This order prioritizes places where a statue can be hidden by the camera or confused with ordinary scenery.',
+          'Do not install a completed save, trainer, or achievement unlocker. The statues are reachable through normal progression, and an imported save can replace the evidence needed to identify which interaction failed. Keep your existing save backed up, finish route access, and use the ten-location checklist for a clean recovery pass.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'How many raccoon statues are there?',
+        answer:
+          'There are 10 raccoon statues in the released game, spread across Oak Forest, Birch Grove, Dark Forest, and the lighthouse exterior.',
+      },
+      {
+        question: 'Do I need to collect the raccoons in order?',
+        answer:
+          'No. The discovery order does not matter. A zone checklist is simply the fastest way to avoid repeating the same locations.',
+      },
+      {
+        question: 'Where is the final raccoon statue?',
+        answer:
+          'There is no fixed final statue, but the lighthouse exterior is a common late-route location. Check it after the three forest zones are complete.',
+      },
+      {
+        question: 'Why did Raccoon Collecter not unlock?',
+        answer:
+          'Recheck all ten interactions and wait after the last pickup. The achievement spelling is Raccoon Collecter in the Steam schema.',
+      },
+    ],
+  },
+  {
     slug: 'achievements-and-secrets',
     path: '/guides/achievements-and-secrets',
     title: 'A Game About Chopping Trees Achievements and Secrets',
@@ -930,6 +1060,7 @@ export const guides: Guide[] = [
     video: videos.achievements,
     tags: ['15 achievements', 'Secrets', '100%'],
     relatedRoutes: [
+      '/guides/raccoon-statue-locations',
       '/guides/upgrades-and-progression',
       '/guides/handcar-biomes-and-bridges',
       '/guides/beginner-guide',
@@ -1560,6 +1691,7 @@ export const featuredGuides = guides.filter((guide) =>
     'co-op-guide',
     'handcar-biomes-and-bridges',
     'achievements-and-secrets',
+    'raccoon-statue-locations',
     'controls-gamepad-and-sprint',
   ].includes(guide.slug)
 );

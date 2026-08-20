@@ -48,6 +48,7 @@ export const routeLabels: Record<string, string> = {
   '/guides/co-op-guide': 'Co-op Guide',
   '/guides/handcar-biomes-and-bridges': 'Handcar, Biomes & Bridges',
   '/guides/achievements-and-secrets': 'Achievements & Secrets',
+  '/guides/raccoon-statue-locations': 'All Raccoon Locations',
   '/guides/controls-gamepad-and-sprint': 'Controls & Sprint',
   '/guides/demo-vs-full-game': 'Demo vs Full Game',
   '/guides/platforms-release-and-price': 'Release, Price & Platforms',

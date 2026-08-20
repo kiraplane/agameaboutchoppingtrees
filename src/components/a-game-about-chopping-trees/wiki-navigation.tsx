@@ -38,6 +38,7 @@ const wikiNavRoutes = [
       '/guides/upgrades-and-progression',
       '/guides/handcar-biomes-and-bridges',
       '/guides/achievements-and-secrets',
+      '/guides/raccoon-statue-locations',
     ],
   },
   {

@@ -1,6 +1,6 @@
 import type { DataSource, GameFact, KeywordMatrixItem } from './types';
 
-export const checkedAt = '2026-08-17';
+export const checkedAt = '2026-08-20';
 
 export const siteFacts = {
   siteName: 'A Game About Chopping Trees Wiki',
@@ -203,6 +203,14 @@ export const sources: DataSource[] = [
     note: 'Exact pirate/Birch achievement footage, cross-checked against the public Steam achievement schema.',
   },
   {
+    type: 'youtube',
+    label: 'GameSmyth all 10 raccoon locations',
+    url: 'https://www.youtube.com/watch?v=w5PbFuAqkUU',
+    checkedAt,
+    confidence: 'medium',
+    note: 'Complete released-build landmark run for all 10 raccoon statues, cross-checked against the official Raccoon Collecter achievement.',
+  },
+  {
     type: 'competitor',
     label: 'Steam Community Guides',
     url: siteFacts.officialGuidesUrl,
@@ -318,6 +326,15 @@ export const keywordMatrix: KeywordMatrixItem[] = [
     'keep',
     '15-item official Steam schema.',
     'Includes pirate, lighthouse and raccoons.'
+  ),
+  item(
+    'a game about chopping trees raccoon locations',
+    'Collect all ten raccoon statues.',
+    '/guides/raccoon-statue-locations',
+    'P0',
+    'keep',
+    'Official achievement plus a complete released-build location run.',
+    'One focused page for every named landmark.'
   ),
   item(
     'a game about chopping trees demo',
